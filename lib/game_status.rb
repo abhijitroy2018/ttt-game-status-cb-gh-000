@@ -40,6 +40,7 @@ def won?(board)
 
         if all_Xs || all_Os
           return win_combination
+          break
         else
           return nil
         end
