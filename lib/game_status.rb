@@ -38,7 +38,7 @@ def won?(board)
         return win_combination
       end
     else
-      nil
+      puts "p"
     end # end of outer if
   end # end of do-loop
 end # end of def
