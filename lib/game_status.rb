@@ -33,7 +33,7 @@ def won?(board)
         return win_combination
       # else
       #   return winning_positions_taken
-      # end
+      end
 
     end # end of outer if
   end # end of do-loop
