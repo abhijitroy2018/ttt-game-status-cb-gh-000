@@ -39,10 +39,10 @@ def won?(board)
       end
 
     else
-    all_empty = board.all? do |index, element board[index] = element|
-      position_taken?(board, )
+    all_empty = board.all? do |element|
+      element == " "
     end
-      
+
 
 
     end # end of outer if
