@@ -64,7 +64,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   if won?(board)
     rturn board[won?(board)[0]]
   end
