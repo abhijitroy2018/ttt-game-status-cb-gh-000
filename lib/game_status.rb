@@ -57,3 +57,7 @@ def draw?(board)
     return true # for in-progress game
   end
 end
+
+def over?(board)
+
+end
