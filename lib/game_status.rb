@@ -50,15 +50,15 @@ def draw?(board)
   if full?(board) && !won?(board)
     return true
   elsif !full?(board) && !won?(board)
-    return false
+    return false # for in-progress game
   elsif won?(board)
     return false
   else
-    return false # for in-progress game
+    return true
   end
 end
 
 def over?(board)
-  if won?(board) || full?(board) || 
+  if won?(board) || full?(board) ||
 
 end
