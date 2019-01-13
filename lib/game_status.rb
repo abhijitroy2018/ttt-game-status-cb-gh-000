@@ -41,3 +41,7 @@ def won?(board)
   end
   return result_array
 end
+
+def full?(board)
+
+end
