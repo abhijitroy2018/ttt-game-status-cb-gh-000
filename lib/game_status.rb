@@ -16,7 +16,8 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  
-    
-
+  positions_taken = []
+  board.each do |b, i|
+    positions_taken << position_taken(b, i)
+  end
 end
