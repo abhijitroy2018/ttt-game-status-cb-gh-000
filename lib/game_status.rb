@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  !board.all? {|element| element == " "}
+  
   WIN_COMBINATIONS.each do |win_combination|
     winning_positions_taken = position_taken?(board, win_combination[0]) &&
     position_taken?(board, win_combination[1]) &&
@@ -37,8 +37,8 @@ def won?(board)
 
       if all_Xs || all_Os
         return win_combination
-      # else
-      #   return nil
+      else
+        !board.all? {|element| element == " "}
       end
     end # end of outer if
   end # end of do-loop
