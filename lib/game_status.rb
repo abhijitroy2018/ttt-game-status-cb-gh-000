@@ -30,7 +30,7 @@ def won?(board)
       end
 
       if all_Xs || all_Os
-        win_combination
+        return win_combination
       end
     end
   end
