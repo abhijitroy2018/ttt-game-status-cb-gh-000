@@ -35,12 +35,14 @@ def won?(board)
       )
 
       if all_Xs || all_Os
-        # puts "test passed"
         return win_combination
       end
 
     else
-
+    all_empty = board.all? do |index, element board[index] = element|
+      position_taken?(board, )
+    end
+      
 
 
     end # end of outer if
