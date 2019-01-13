@@ -53,8 +53,8 @@ def draw?(board)
     return false # for in-progress game
   elsif won?(board)
     return false
-  else
-    return true
+  # else
+  #   return true
   end
 end
 
