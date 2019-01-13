@@ -35,7 +35,7 @@ def won?(board)
         return winning_positions_taken
       end
 
-    end
+    end # end of outer if
   end # end of do-loop
 end # end of def
 
