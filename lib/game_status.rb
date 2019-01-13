@@ -37,12 +37,7 @@ def won?(board)
       if all_Xs || all_Os
         return win_combination
       end
-
-    else
-      all_empty = board.all? do |element|
-        element == " "
-      end
-      return all_empty
+      
     end # end of outer if
   end # end of do-loop
 end # end of def
