@@ -16,5 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  if board.any?{|b, i| position_taken(b, i)}
+    
 
 end
