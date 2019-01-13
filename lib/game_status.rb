@@ -41,10 +41,10 @@ def won?(board)
         if all_Xs || all_Os
           return win_combination
         else
-          board_any = board.any? {|element| element == "X" || element=="O"}
-          if board_any
+          # board_any = board.any? {|element| element == "X" || element=="O"}
+          # if board_any
             return nil
-          end
+          # end
         end
       end # end of outer if
     end # end of do-loop
