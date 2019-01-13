@@ -38,6 +38,11 @@ def won?(board)
         # puts "test passed"
         return win_combination
       end
+
+    else
+
+
+
     end # end of outer if
   end # end of do-loop
 end # end of def
