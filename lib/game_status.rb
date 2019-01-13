@@ -22,18 +22,18 @@ def won?(board)
                               position_taken?(board, win_combination[2])
 
     if winning_positions_taken
-      all_Xs = win_combination.all? do |position_value_X|
-        position_value_X == "X"
+      all_Xs = win_combination.all? do |index_X|
+        board[index_X] == "X"
       end
-      all_Os = win_combination.all? do |position_value_O|
-        position_value_O == "O"
+      all_Os = win_combination.all? do |index_O|
+        board[index_O] == "O"
       end
 
       if all_Xs || all_Os
         return win_combination
       end
-
     end
+    
   end
 end
 
