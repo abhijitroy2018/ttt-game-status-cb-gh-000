@@ -23,8 +23,8 @@ def won?(board)
   else
     WIN_COMBINATIONS.each do |win_combination|
       winning_positions_taken = position_taken?(board, win_combination[0]) &&
-      position_taken?(board, win_combination[1]) &&
-      position_taken?(board, win_combination[2])
+                                position_taken?(board, win_combination[1]) &&
+                                position_taken?(board, win_combination[2])
 
       if winning_positions_taken
         # All Xs
