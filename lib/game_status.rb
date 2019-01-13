@@ -43,5 +43,5 @@ def won?(board)
 end
 
 def full?(board)
-    return board.none?{|element| element=" "}
+    return board.none?(" ")
 end
