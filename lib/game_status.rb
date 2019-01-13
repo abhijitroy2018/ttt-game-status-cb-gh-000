@@ -43,5 +43,5 @@ def won?(board)
 end
 
 def full?(board)
-    return !board.include?(" ")
+    return board.any?{|element| element=" ")
 end
