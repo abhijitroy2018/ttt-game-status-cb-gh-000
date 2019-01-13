@@ -17,6 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   board_empty = board.all? {|element| element == " "}
+  result_array = nil
   if board_empty
     return nil
   else
@@ -37,7 +38,7 @@ def won?(board)
         # else
         #   return nil
         end
-      end # end of outer if
-    end # end of do-loop
-  end # end of def won
+      end 
+    end
+  end 
 end
