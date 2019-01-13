@@ -41,28 +41,10 @@ def won?(board)
         if all_Xs || all_Os
           return win_combination
         else
-          # board_any = board.any? {|element| element == "X" || element=="O"}
-          # if board_any
-            return nil
-          # end
+          return nil
         end
       end # end of outer if
     end # end of do-loop
   end # end of def won
 end
 
-# def full?(board)
-#
-# end
-#
-# def draw?(board)
-#
-# end
-#
-# def over?(board)
-#
-# end
-#
-# def winner?(board)
-#
-# end
