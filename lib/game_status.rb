@@ -20,4 +20,5 @@ def won?(board)
   board.each do |b, i|
     positions_taken << position_taken(b, i)
   end
+  position_taken
 end
