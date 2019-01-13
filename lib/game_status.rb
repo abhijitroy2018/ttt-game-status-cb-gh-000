@@ -22,18 +22,22 @@ def won?(board)
                               position_taken?(board, win_combination[2])
 
     if winning_positions_taken
-      all_Xs = win_combination.all? do |index_X|
-        board[index_X] == "X"
-      end
-      all_Os = win_combination.all? do |index_O|
-        board[index_O] == "O"
-      end
+      # All Xs
+      all_Xs = (board[win_combination[0]] == "X" && 
+                board[win_combination[1]] == "X" &&
+                board[win_combination[2]] == "X"
+      )
+
+      # All Os
+      all_Os = (board[win_combination[0]] == "O" && 
+                board[win_combination[1]] == "O" &&
+                board[win_combination[2]] == "O"
+      )
 
       if all_Xs || all_Os
+        # puts "test passed"
         return win_combination
-      else
-        return
-      end
+      end 
     end # end of outer if
   end # end of do-loop
 end # end of def
