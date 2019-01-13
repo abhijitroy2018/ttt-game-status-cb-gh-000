@@ -54,10 +54,11 @@ def draw?(board)
   elsif won?(board)
     return false
   else
-    return true # for in-progress game
+    return false # for in-progress game
   end
 end
 
 def over?(board)
+  if won?(board) || full?(board) || 
 
 end
