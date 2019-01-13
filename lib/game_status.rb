@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  board.all? {|element| element == " "}
+  !board.all? {|element| element == " "}
 
 end # end of def won
 
