@@ -34,11 +34,11 @@ def won?(board)
         all_Os = (board[win_combination[0]] == "O" && board[win_combination[1]] == "O" && board[win_combination[2]] == "O")
 
         if all_Xs || all_Os
-          return win_combination
+          result_array = win_combination
         # else
         #   return nil
         end
-      end 
+      end
     end
-  end 
+  end
 end
