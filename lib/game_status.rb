@@ -39,4 +39,5 @@ def won?(board)
       end
     end
   end
+  return result_array
 end
