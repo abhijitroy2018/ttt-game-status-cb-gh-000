@@ -34,10 +34,10 @@ def won?(board)
                   board[win_combination[2]] == "O"
         )
 
-        if all_Xs || all_Os
+        if all_Xs
           return win_combination
-        else
-          return nil
+        elsif all_Os
+          return win_combination
         end
     end # end of outer if
   end # end of do-loop
