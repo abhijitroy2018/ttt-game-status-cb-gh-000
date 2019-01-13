@@ -16,9 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  
 
-end # end of def
+
+end # end of def won
 
 # def full?(board)
 #
