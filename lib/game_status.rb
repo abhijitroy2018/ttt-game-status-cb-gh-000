@@ -39,7 +39,7 @@ def won?(board)
         )
 
         if all_Xs || all_Os
-          return win_combination.to_ary
+          return win_combination
         else
           # board_any = board.any? {|element| element == "X" || element=="O"}
           # if board_any
