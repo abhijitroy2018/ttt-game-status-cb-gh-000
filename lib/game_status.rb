@@ -42,10 +42,7 @@ def won?(board)
           return win_combination
         end
       end # end of outer if
-    end # end of do-loop  
-
-  
-
+    end # end of do-loop
 end # end of def won
 
 # def full?(board)
