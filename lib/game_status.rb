@@ -34,9 +34,7 @@ def won?(board)
                   board[win_combination[2]] == "O"
         )
 
-        if all_Xs
-          return win_combination
-        elsif all_Os
+        if all_Xs || all_Os
           return win_combination
         else
           return nil
