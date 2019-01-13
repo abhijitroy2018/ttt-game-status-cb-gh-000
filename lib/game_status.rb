@@ -38,6 +38,8 @@ def won?(board)
           return win_combination
         elsif all_Os
           return win_combination
+        else
+          return nil
         end
     end # end of outer if
   end # end of do-loop
