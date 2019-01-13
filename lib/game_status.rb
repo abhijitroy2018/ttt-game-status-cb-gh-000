@@ -24,20 +24,20 @@ def won?(board)
       winning_positions_taken = position_taken?(board, win_combination[0]) &&
       position_taken?(board, win_combination[1]) &&
       position_taken?(board, win_combination[2])
-
+      
       if winning_positions_taken
         # All Xs
         all_Xs = (board[win_combination[0]] == "X" &&
         board[win_combination[1]] == "X" &&
         board[win_combination[2]] == "X"
         )
-
+        
         # All Os
         all_Os = (board[win_combination[0]] == "O" &&
         board[win_combination[1]] == "O" &&
         board[win_combination[2]] == "O"
         )
-
+        
         if all_Xs || all_Os
           return win_combination
         else
@@ -47,4 +47,3 @@ def won?(board)
     end # end of do-loop
   end # end of def won
 end
-
