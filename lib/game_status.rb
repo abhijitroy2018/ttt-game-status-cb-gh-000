@@ -39,12 +39,10 @@ def won?(board)
       end
 
     else
-    all_empty = board.all? do |element|
-      element == " "
-    end
-
-
-
+      all_empty = board.all? do |element|
+        element == " "
+      end
+      return all_empty
     end # end of outer if
   end # end of do-loop
 end # end of def
