@@ -35,8 +35,6 @@ def won?(board)
 
         if all_Xs || all_Os
           result_array = win_combination
-        # else
-        #   return nil
         end
       end
     end
