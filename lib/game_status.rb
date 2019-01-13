@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2, 4, 6]
 ]
 
-def won?(board)  
+def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     winning_positions_taken = position_taken?(board, win_combination[0]) &&
                               position_taken?(board, win_combination[1]) &&
@@ -38,7 +38,7 @@ def won?(board)
         return win_combination
       end
     # else
-    #   return 
+    #   return
     end # end of outer if
   end # end of do-loop
 end # end of def
