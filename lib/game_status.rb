@@ -24,4 +24,5 @@ def won?(board)
         win_combination
       end
     end
+  end
 end
