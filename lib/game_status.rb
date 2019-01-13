@@ -32,12 +32,10 @@ def won?(board)
       if all_Xs || all_Os
         return win_combination
       end
-    else
-      return nil
-    end
 
-  end
-end
+    end
+  end # end of do-loop
+end # end of def
 
 # def full?(board)
 #
